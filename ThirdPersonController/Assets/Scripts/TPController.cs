@@ -22,6 +22,14 @@ public class TPController : MonoBehaviour
         {
             person.AddForce(Vector3.back * speed);
         }
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            person.AddForce(Vector3.up * speed);
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            person.AddForce(Vector3.down * speed);
+        }
         if (Input.GetKey(KeyCode.A))
         {
             person.AddForce(Vector3.left * speed);
