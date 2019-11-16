@@ -21,7 +21,7 @@ public class CameraTrack : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 newPos = playerTransform.position + cameraOffset;
         transform.position = Vector3.Slerp(transform.position, newPos, smoothFactor);
